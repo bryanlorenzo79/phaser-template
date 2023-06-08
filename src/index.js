@@ -1,14 +1,18 @@
-import Phaser from 'phaser'
-import './css/styles.scss'
-import Sc01 from './Sc01'
-import Sc02 from './Sc02'
-import './fontLoader'
+import Phaser from 'phaser';
+import './css/styles.scss';
+
+import './util/font_loader';
+// import './util/image_fx';
+
+import Boot from './scn/boot';
+import Menu from './scn/menu';
+import Game from './scn/game';
 
 const config = {
     type: Phaser.AUTO,
     width: 448,
     height: 64*10,
-    scene: [Sc01, Sc02],
+    scene: [Boot, Menu, Game],
     scale: {
         mode: Phaser.Scale.FIT,
         // autoCenter: Phaser.Scale.CENTER_BOTH
