@@ -1,5 +1,7 @@
-class AlignGrid {
-    constructor(config) {
+export default class AlignGrid {
+    constructor(config, game) {
+        // sample
+        // aGrid = AlignGrid({scene:this,rows:10,cols:10}, this.game);
         this.config = config;
         if (!config.scene) {
             console.log("missing scene");

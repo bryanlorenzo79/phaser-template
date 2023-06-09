@@ -2,7 +2,6 @@ import Phaser from 'phaser';
 import './css/styles.scss';
 
 import './util/font_loader';
-// import './util/image_fx';
 
 import Boot from './scn/boot';
 import Menu from './scn/menu';
@@ -15,7 +14,7 @@ const config = {
     scene: [Boot, Menu, Game],
     scale: {
         mode: Phaser.Scale.FIT,
-        // autoCenter: Phaser.Scale.CENTER_BOTH
+        autoCenter: Phaser.Scale.CENTER_WIDTH
     }
 };
 

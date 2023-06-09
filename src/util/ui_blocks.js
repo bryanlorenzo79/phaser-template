@@ -1,4 +1,4 @@
-class UIBlock {
+export default class UIBlock {
     constructor() {
         //init private variables
         this._x = 0;
